@@ -13,13 +13,25 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "start/graphql": "json-graphql-server ./src/db.json --p 4000",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "gatsby": "^5.9.0",
+    "gatsby-image-graphql-schema": "^1.1.1",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-sass": "^6.9.0",
+    "gatsby-plugin-sharp": "^5.9.0",
+    "gatsby-plugin-typescript": "^5.9.0",
+    "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-source-graphql": "^5.9.0",
+    "gatsby-transformer-sharp": "^5.9.0",
+    "json-graphql-server": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "sass": "^1.62.1"
   },
   "devDependencies": {

@@ -1,0 +1,106 @@
+.product {
+  border: 1px solid #E7E7E7;
+  border-radius: 62px;
+  padding: 21px 21px 41px 21px;
+
+  .product__image {
+    position: relative;
+
+    .product__category {
+      position: absolute;
+      z-index: 2;
+      left: 24px;
+      bottom: 20px;
+      background: #FFFFFF;
+      border-radius: 8px 8px 8px 0px;
+      padding: 10px;
+      font-family: 'Inter';
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.22px;
+      color: #4D5053;
+    }
+    
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .product__title {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    color: #292F36;
+    cursor: pointer;
+    display: -webkit-box; /* установка флексовой модели блока */
+    -webkit-line-clamp: 2; /* максимальное количество строк, которое может отображаться */
+    -webkit-box-orient: vertical; /* выравнивание текста по вертикали */
+    overflow: hidden; /* скрытие всех частей текста, которые выходят за пределы блока */
+    text-overflow: ellipsis; 
+    text-decoration: none;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    color: #292F36; 
+  }
+}
+
+
+@media(max-width: 920px) {
+  .product__title {
+      font-size: 22px;
+      line-height: 25px;
+  }
+}
+
+@media(max-width: 720px) {
+  .product__category {
+    font-size: 16px;
+    left: calc(10% - 6px);
+    line-height: 25px;
+  }
+}
+
+@media(max-width: 400px) {
+  .product__category {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+@media(max-width: 350px) {
+  .product__title {
+      font-size: 20px;
+      line-height: 20px;
+  }
+
+  .product__category {
+      font-size: 14px;
+      line-height: 15px;
+  }
+}
